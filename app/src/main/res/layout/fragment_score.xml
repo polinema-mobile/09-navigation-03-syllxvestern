@@ -2,18 +2,20 @@
 <layout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	>
+	xmlns:tools="http://schemas.android.com/tools">
+
 	<data>
-		<variable
-			name="homeGoalScorerList"
-			type="java.util.List" />
-		<variable
-			name="awayGoalScorerList"
-			type="java.util.List" />
 		<variable
 			name="fragment"
 			type="id.ac.polinema.skor.fragments.ScoreFragment" />
+
+		<variable
+			name="homeGoalScorerList"
+			type="java.util.List" />
+
+		<variable
+			name="awayGoalScorerList"
+			type="java.util.List" />
 	</data>
 
 	<androidx.constraintlayout.widget.ConstraintLayout
@@ -104,6 +106,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="8dp"
+			android:text="@{fragment.homeScorer}"
 			app:layout_constraintBottom_toTopOf="@+id/button_add_home"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent" />
@@ -113,6 +116,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="8dp"
+			android:text="@{fragment.awayScorer}"
 			app:layout_constraintBottom_toTopOf="@+id/button_add_away"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent" />

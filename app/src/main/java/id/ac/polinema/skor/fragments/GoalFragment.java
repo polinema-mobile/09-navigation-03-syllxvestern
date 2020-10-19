@@ -49,6 +49,7 @@ public class GoalFragment extends Fragment {
 	}
 
 	public void onCancelClicked(View view) {
+
 		Navigation.findNavController(view).navigateUp();
 	}
 }
